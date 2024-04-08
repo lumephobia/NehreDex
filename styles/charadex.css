@@ -602,7 +602,7 @@ img {
 /* ============================================================= */
 
 /* Combines search and its companion filter */
-.traits:has(.wings:empty) {
+.traits:has(.pl-3:empty) {
   display: none;
 }
 
