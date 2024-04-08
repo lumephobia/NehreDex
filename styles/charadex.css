@@ -602,7 +602,7 @@ img {
 /* ============================================================= */
 
 /* Combines search and its companion filter */
-.traits:has(.pl-3:.wings) {
-  color: red;
+.ruck {
+  padding-left: 20px;
 }
 
