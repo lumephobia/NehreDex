@@ -595,3 +595,14 @@ img {
   width: calc(100% + .5rem) !important;
   border-radius: 0 var(--cd-border-radius) var(--cd-border-radius) 0 !important;
 }
+
+
+/* ============================================================= */
+/* Extras
+/* ============================================================= */
+
+/* Combines search and its companion filter */
+.traits:has(.wings:empty) {
+  display: none;
+}
+
