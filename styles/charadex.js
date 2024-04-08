@@ -39,7 +39,7 @@ const charadex = (options) => {
     sheetPage: userOptions.sheetPage ? userOptions.sheetPage : "Public Masterlist",
     itemAmount: userOptions.itemAmount ? userOptions.itemAmount : 12,
     itemOrder: userOptions.itemOrder ? userOptions.itemOrder : "desc",
-    searchParams: userOptions.searchParams ? userOptions.searchParams : ['id', 'owner', 'artist', 'designer'],
+    searchParams: userOptions.searchParams ? userOptions.searchParams : ['id', 'owner', 'artist', 'designer' 'code'],
     urlFilterParam: userOptions.urlFilterParam ? userOptions.urlFilterParam.toLowerCase().replace(/\s/g,'') : false,
   };
 
