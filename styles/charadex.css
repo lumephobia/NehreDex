@@ -602,7 +602,6 @@ img {
 /* ============================================================= */
 
 /* Combines search and its companion filter */
-.traits:has(.wings:empty) {
-  display: none;
-}
+.traits {
+  colour: red;}
 
