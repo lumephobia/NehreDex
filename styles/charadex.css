@@ -603,5 +603,5 @@ img {
 
 /* Combines search and its companion filter */
 .traits {
-  colour: red;}
+  colour: red!important;}
 
