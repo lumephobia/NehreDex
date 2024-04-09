@@ -21,7 +21,7 @@ body {
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color:                  #e3c0aa;
+  --cd-secondary-color:                  #7ea1b1;
   --cd-secondary-text-color:             #70627c;
 
   /* ============================================================= */
@@ -409,7 +409,7 @@ a:active {
 /* ============================================================= */
 
 .card {
-  background-color: #eee2e4 !important;
+  background-color: #f9f1f5 !important;
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
   border-color: transparent !important;
