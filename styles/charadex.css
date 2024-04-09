@@ -15,21 +15,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #8FB7D4;
-  --cd-primary-text-color:               #fff;
+  --cd-primary-color:                    #b47899;
+  --cd-primary-text-color:               #3b3247;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color:                  #939799;
-  --cd-secondary-text-color:             #fff;
+  --cd-secondary-color:                  #e3c0aa;
+  --cd-secondary-text-color:             #70627c;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color:            #f8f8f8;
-  --cd-content-background-color:         #ffffff;
-  --cd-faded-background-color:           #f8f8f8;
+  --cd-content-background-color:         #70607b;
+  --cd-faded-background-color:           #fcf6f6;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -37,13 +37,13 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color:                  #303030;
-  --cd-faded-text-color:                 #575757;
+  --cd-body-text-color:                  #3b3247;
+  --cd-faded-text-color:                 #70607b;
 
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color:                     rgba(0, 0, 0, 0.125);
+  --cd-border-color:                     #3b3247;
   --cd-border-width:                     1px;
   --cd-border-style:                     solid;
   --cd-border-radius:                    .75rem;
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #222222;
+  --cd-navbar-background-color:          #fcf6f6;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
   --cd-navbar-text-color:                var(--cd-content-background-color);
@@ -84,7 +84,7 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider:          rgba(255,255,255,.12);
+  --cd-navbar-dropdown-divider:          #70607b;
   --cd-navbar-dropdown-border-radius:    0 0 var(--cd-border-radius) var(--cd-border-radius);
 
 
@@ -105,7 +105,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color:                  #4c8ebd;
+  --cd-link-text-color:                  #86b1c5;
   --cd-link-text-color-hover:            var(--cd-secondary-color);
 
 
@@ -209,8 +209,8 @@ body.dark {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color:                  #f0f0f0;
-  --cd-faded-text-color:                 #a8a8a8;
+  --cd-body-text-color:                  #3b3247;
+  --cd-faded-text-color:                 #575757;
   --cd-navbar-text-color:                var(--cd-faded-text-color);
   --cd-link-text-color:                  var(--cd-primary-color);
 
@@ -234,11 +234,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* Global Background */
-  background-color: var(--cd-body-background-color);
-  background-image: url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a413091d41ed1c87fcd8/previews/6615a414091d41ed1c87fd89/download/bg1.png);
-  background-position: top left;
-  background-size: repeat;
-
+  background: 
+   url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a42d8824929283de8c63/previews/6615a42e8824929283de8cd6/download/dashedbg.png) repeat fixed,  /* On top,    like z-index: 4; */
+   url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a413091d41ed1c87fcd8/previews/6615a414091d41ed1c87fd89/download/bg1.png) repeat fixed;
 }
 
 
@@ -411,10 +409,10 @@ a:active {
 /* ============================================================= */
 
 .card {
-  background-color: var(--cd-card-background-color) !important;
+  background-color: #eee2e4 !important;
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
-  border-color: var(--cd-card-border-color) !important;
+  border-color: transparent !important;
   border-radius: var(--cd-border-radius) !important;
 }
 
@@ -602,7 +600,7 @@ img {
 /* ============================================================= */
 
 .charadex-gallery {
-  background-color: white;
+  background-color: #fcf6f6;
   border-radius: .6rem;
   padding: 10px 10px 10px 10px;
 }
