@@ -27,9 +27,9 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color:            #c5aebd;
+  --cd-body-background-color:            #f8f8f8;
   --cd-content-background-color:         #ffffff;
-  --cd-faded-background-color:           #c5aebd;
+  --cd-faded-background-color:           #f8f8f8;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -235,9 +235,9 @@ body {
 
   /* Global Background */
   background-color: var(--cd-body-background-color);
-  background-image: var(--cd-background-body-image);
-  background-position: center;
-  background-size: cover;
+  background-image: url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a413091d41ed1c87fcd8/previews/6615a414091d41ed1c87fd89/download/bg1.png);
+  background-position: top left;
+  background-size: repeat;
 
 }
 
@@ -601,8 +601,8 @@ img {
 /* Extras
 /* ============================================================= */
 
-/* Combines search and its companion filter */
-.ruck {
-  margin-left: 20px;
+.charadex-gallery {
+  background-color: white;
+  border-radius: .6rem;
+  padding: 10px 10px 10px 10px;
 }
-
