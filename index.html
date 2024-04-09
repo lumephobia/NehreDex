@@ -79,7 +79,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#"><i class="bi bi-box2-heart-fill"></i></a>
+      <a class="navbar-brand" href="#"><i class="bi bi-box2-heart-fill"></i> Charadex</a>
     
       <!-- Toggle -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav">
@@ -113,85 +113,84 @@
     </div>
   </nav>
 
-  <div style="background: white;">
-    <div class="spinner-border m-auto" id="loading"></div>
+  <div class="spinner-border m-auto" id="loading"></div>
   
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container masterlist-container d-flex flex-column py-md-5 py-4">
+  <!-- --------------------------------------------------------------------
+  <-- Masterlist
+  <-------------------------------------------------------------------- -->
+  <div class="container masterlist-container d-flex flex-column py-md-5 py-4">
 
-      <!-- URL Param Filter Buttons Render
-      <-- Remove this if you'd like to make your own buttons instead!
-      ------------------------------------------------------------------- -->
-      <div class="card p-4 mb-4" style="display:none;" id="filter-buttons">
-        <ul class="row no-gutters list list-unstyled m-n2"></ul>
-      </div>
-
-
-      <!-- Gallery Container
-      ------------------------------------------------------------------- -->
-      <div id="charadex-gallery">
+    <!-- URL Param Filter Buttons Render
+    <-- Remove this if you'd like to make your own buttons instead!
+    ------------------------------------------------------------------- -->
+    <div class="card p-4 mb-4" style="display:none;" id="filter-buttons">
+      <ul class="row no-gutters list list-unstyled m-n2"></ul>
+    </div>
 
 
-        <!-- Filters
-        ----------------------------------------------------------------- -->
-        <div class="card p-4 mb-4 sticky-top" style="display:none;" id="charadex-filters">
-          <div class="row no-gutters m-n2">
+    <!-- Gallery Container
+    ------------------------------------------------------------------- -->
+    <div id="charadex-gallery">
 
-           <!-- Custom Filter (Optional) 
-           <-- Fill in the <option></options> with the items you want it to filter
-               through. Make sure that filter="" matches the column with said items.
-               Do not remove 'All' -->
-           <div class="col-md-2 col-12 p-1">
-             <select class="form-control bg-faded" filter="designtype" id="filter">
-                <option>All</option>
-                <option>Official Design</option>
-                <option>Guest Design</option>
-                <option>MYO Design</option>
-              </select>
-            </div>
 
-            <!-- Search Filter (Optional)
-            <-- Fill in the <option></options> with the items you want it to filter
-                through. 
-                Do not remove 'All' -->
-            <div class="col-md-2 col-3 p-1">
-              <select class="form-control bg-faded" id="search-filter">
-                <option>All</option>
-                <option>Worth</option>
-                <option>Owner</option>
-                <option>Designer</option>
-                <option>Artist</option>
-              </select>
-            </div>
+      <!-- Filters
+      ----------------------------------------------------------------- -->
+      <div class="card p-4 mb-4 sticky-top" style="display:none;" id="charadex-filters">
+        <div class="row no-gutters m-n2">
 
-            <!-- Search Bar (Optional) -->
-            <div class="col-md-3 col-9 p-1">
-             <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
-            </div>
-
-            <!-- Pagination -->
-            <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center p-1">
-              <div class="nav d-flex">
-                <div class="btn-prev page-item"><a class="page-link"><i class="bi bi-chevron-left"></i></a></div>
-                <ul class="pagination pagination-top justify-content-center m-0"></ul>
-                <div class="btn-next page-item"><a class="page-link"><i class="bi bi-chevron-right"></i></a></div>
-              </div>
-            </div>
-
+          <!-- Custom Filter (Optional) 
+          <-- Fill in the <option></options> with the items you want it to filter
+              through. Make sure that filter="" matches the column with said items.
+              Do not remove 'All' -->
+          <div class="col-md-2 col-12 p-1">
+            <select class="form-control bg-faded" filter="designtype" id="filter">
+              <option>All</option>
+              <option>Official Design</option>
+              <option>Guest Design</option>
+              <option>MYO Design</option>
+            </select>
           </div>
+
+          <!-- Search Filter (Optional)
+          <-- Fill in the <option></options> with the items you want it to filter
+              through. 
+              Do not remove 'All' -->
+          <div class="col-md-2 col-3 p-1">
+            <select class="form-control bg-faded" id="search-filter">
+              <option>All</option>
+              <option>Worth</option>
+              <option>Owner</option>
+              <option>Designer</option>
+              <option>Artist</option>
+            </select>
+          </div>
+
+          <!-- Search Bar (Optional) -->
+          <div class="col-md-3 col-9 p-1">
+            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+          </div>
+
+          <!-- Pagination -->
+          <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center p-1">
+            <div class="nav d-flex">
+              <div class="btn-prev page-item"><a class="page-link"><i class="bi bi-chevron-left"></i></a></div>
+              <ul class="pagination pagination-top justify-content-center m-0"></ul>
+              <div class="btn-next page-item"><a class="page-link"><i class="bi bi-chevron-right"></i></a></div>
+            </div>
+          </div>
+
         </div>
-
-
-        <!-- Repeated Items Render Here
-        ----------------------------------------------------------------- -->
-        <ul class="row no-gutters list list-unstyled m-n2"></ul>
-
       </div>
+
+
+      <!-- Repeated Items Render Here
+      ----------------------------------------------------------------- -->
+      <ul class="row no-gutters list list-unstyled m-n2"></ul>
 
     </div>
+
   </div>
+
 
   
   <!-- --------------------------------------------------------------------
