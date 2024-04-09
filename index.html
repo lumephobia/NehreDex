@@ -79,7 +79,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#"><i class="bi bi-box2-heart-fill"></i> Charadex</a>
+      <a class="navbar-brand" href="#"><i class="bi bi-box2-heart-fill"></i></a>
     
       <!-- Toggle -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav">
@@ -113,84 +113,85 @@
     </div>
   </nav>
 
-  <div class="spinner-border m-auto" id="loading"></div>
+  <div style="background: white;">
+    <div class="spinner-border m-auto" id="loading"></div>
   
-  <!-- --------------------------------------------------------------------
-  <-- Masterlist
-  <-------------------------------------------------------------------- -->
-  <div class="container masterlist-container d-flex flex-column py-md-5 py-4">
+    <!-- --------------------------------------------------------------------
+    <-- Masterlist
+    <-------------------------------------------------------------------- -->
+    <div class="container masterlist-container d-flex flex-column py-md-5 py-4">
 
-    <!-- URL Param Filter Buttons Render
-    <-- Remove this if you'd like to make your own buttons instead!
-    ------------------------------------------------------------------- -->
-    <div class="card p-4 mb-4" style="display:none;" id="filter-buttons">
-      <ul class="row no-gutters list list-unstyled m-n2"></ul>
-    </div>
-
-
-    <!-- Gallery Container
-    ------------------------------------------------------------------- -->
-    <div id="charadex-gallery">
-
-
-      <!-- Filters
-      ----------------------------------------------------------------- -->
-      <div class="card p-4 mb-4 sticky-top" style="display:none;" id="charadex-filters">
-        <div class="row no-gutters m-n2">
-
-          <!-- Custom Filter (Optional) 
-          <-- Fill in the <option></options> with the items you want it to filter
-              through. Make sure that filter="" matches the column with said items.
-              Do not remove 'All' -->
-          <div class="col-md-2 col-12 p-1">
-            <select class="form-control bg-faded" filter="designtype" id="filter">
-              <option>All</option>
-              <option>Official Design</option>
-              <option>Guest Design</option>
-              <option>MYO Design</option>
-            </select>
-          </div>
-
-          <!-- Search Filter (Optional)
-          <-- Fill in the <option></options> with the items you want it to filter
-              through. 
-              Do not remove 'All' -->
-          <div class="col-md-2 col-3 p-1">
-            <select class="form-control bg-faded" id="search-filter">
-              <option>All</option>
-              <option>Code</option>
-              <option>Owner</option>
-              <option>Designer</option>
-              <option>Artist</option>
-            </select>
-          </div>
-
-          <!-- Search Bar (Optional) -->
-          <div class="col-md-3 col-9 p-1">
-            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
-          </div>
-
-          <!-- Pagination -->
-          <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center p-1">
-            <div class="nav d-flex">
-              <div class="btn-prev page-item"><a class="page-link"><i class="bi bi-chevron-left"></i></a></div>
-              <ul class="pagination pagination-top justify-content-center m-0"></ul>
-              <div class="btn-next page-item"><a class="page-link"><i class="bi bi-chevron-right"></i></a></div>
-            </div>
-          </div>
-
-        </div>
+      <!-- URL Param Filter Buttons Render
+      <-- Remove this if you'd like to make your own buttons instead!
+      ------------------------------------------------------------------- -->
+      <div class="card p-4 mb-4" style="display:none;" id="filter-buttons">
+        <ul class="row no-gutters list list-unstyled m-n2"></ul>
       </div>
 
 
-      <!-- Repeated Items Render Here
-      ----------------------------------------------------------------- -->
-      <ul class="row no-gutters list list-unstyled m-n2"></ul>
+      <!-- Gallery Container
+      ------------------------------------------------------------------- -->
+      <div id="charadex-gallery">
+
+
+        <!-- Filters
+        ----------------------------------------------------------------- -->
+        <div class="card p-4 mb-4 sticky-top" style="display:none;" id="charadex-filters">
+          <div class="row no-gutters m-n2">
+
+           <!-- Custom Filter (Optional) 
+           <-- Fill in the <option></options> with the items you want it to filter
+               through. Make sure that filter="" matches the column with said items.
+               Do not remove 'All' -->
+           <div class="col-md-2 col-12 p-1">
+             <select class="form-control bg-faded" filter="designtype" id="filter">
+                <option>All</option>
+                <option>Official Design</option>
+                <option>Guest Design</option>
+                <option>MYO Design</option>
+              </select>
+            </div>
+
+            <!-- Search Filter (Optional)
+            <-- Fill in the <option></options> with the items you want it to filter
+                through. 
+                Do not remove 'All' -->
+            <div class="col-md-2 col-3 p-1">
+              <select class="form-control bg-faded" id="search-filter">
+                <option>All</option>
+                <option>Worth</option>
+                <option>Owner</option>
+                <option>Designer</option>
+                <option>Artist</option>
+              </select>
+            </div>
+
+            <!-- Search Bar (Optional) -->
+            <div class="col-md-3 col-9 p-1">
+             <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+            </div>
+
+            <!-- Pagination -->
+            <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center p-1">
+              <div class="nav d-flex">
+                <div class="btn-prev page-item"><a class="page-link"><i class="bi bi-chevron-left"></i></a></div>
+                <ul class="pagination pagination-top justify-content-center m-0"></ul>
+                <div class="btn-next page-item"><a class="page-link"><i class="bi bi-chevron-right"></i></a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Repeated Items Render Here
+        ----------------------------------------------------------------- -->
+        <ul class="row no-gutters list list-unstyled m-n2"></ul>
+
+      </div>
 
     </div>
-
   </div>
-
 
   
   <!-- --------------------------------------------------------------------
@@ -203,23 +204,23 @@
       <div class="row no-gutters m-n3">
 
         <div class="col-md p-3">
-          <h5 class="text-primary">About</h5>
-          <div class="pl-3">
-            <p>After Eclipse took out DeviantArt, I made Charadex to help other species creators organize and keep easier track of their masterlist.</p>
-        
-            <p>And it's not limited to species! If you just sell adopts or what to make a little organizer for your characters - this might help. I use it to keep track of role play AU's and my own designs too!</p>
-        
-            <p>© <i>2022 Cheeriko All Rights Reserved</i></p>
+
+          <div class="pl-3 text-center">
+            <h5 class="text-primary">Charadex</h5>
+            ...a visual tool to improve organizing and keeping track on designs created by cheeriko.
+            <br><br>
+              <a target="_blank" href="https://toyhou.se/cheeriko" data-toggle="tooltip" data-placement="top" title="toyhou.se"><i class="fas fa-home fa-fw"></i></a>
+              <a target="_blank" href="https://ko-fi.com/cheeriko"data-placement="top" title="ko-fi"><i class="fas fa-coffee fa-fw"></i></a>
+              <a target="_blank" href="https://github.com/cheeriko"data-placement="top" title="github"><i class="fab fa-github fa-fw"></i></a> <br><br></p>
+
+              <p>© <i>2022 Cheeriko All Rights Reserved</i></p>  
+
           </div>
         </div>
   
         <div class="col-md-auto p-3">
-          <h5 class="text-primary">Find Me</h5>
+          <h5 class="text-primary"> </h5>
           <div class="pl-3">
-            <a target="_blank" href="https://toyhou.se/cheeriko"><i class="fas fa-home fa-fw"></i> Toyhou.se</a><br>
-            <a target="_blank" href="https://www.deviantart.com/cheeriko"><i class="fab fa-deviantart fa-fw"></i> Deviantart</a><br>
-            <a target="_blank" href="https://ko-fi.com/cheeriko"><i class="fas fa-coffee fa-fw"></i> Ko-Fi</a><br>
-            <a target="_blank" href="https://github.com/cheeriko"><i class="fab fa-github fa-fw"></i> Github</a><br>
           </div>
         </div>
   
@@ -331,9 +332,9 @@
             </div>
             
             <div class="d-flex justify-content-between mb-2">
-              <b class="text-muted">Design Code <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="masterlist number before migration to charadex in spring 2024">
- <i class="fa-solid fa-circle-info"></i>
-</button> </b>
+              <b class="text-muted">Design Code <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="masterlist number before migration to charadex in spring 2024">
+              <i class="fa-solid fa-circle-info"></i>
+              </button> </b>
               <span class="code"></span>
             </div>
               
