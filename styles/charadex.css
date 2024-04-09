@@ -27,9 +27,9 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color:            #f8f8f8;
-  --cd-content-background-color:         #c5aebd;
-  --cd-faded-background-color:           #f8f8f8;
+  --cd-body-background-color:            #c5aebd;
+  --cd-content-background-color:         #ffffff;
+  --cd-faded-background-color:           #c5aebd;
 
   /* Background Extras */
   --cd-body-background-image:             url(https://file.toyhou.se/images/12343165_SYjQYwJejcx5NSD.png);
