@@ -15,7 +15,7 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #b47899;
+  --cd-primary-color:                    #bd8da7;
   --cd-primary-text-color:               #3b3247;
 
   /* ============================================================= */
@@ -28,8 +28,8 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color:            #fcf6f6;
-  --cd-content-background-color:         #796888;
-  --cd-faded-background-color:           #eee7e7;
+  --cd-content-background-color:         #a290b1;
+  --cd-faded-background-color:           #ebe1e1;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -38,12 +38,12 @@ body {
   /* Text
   ================================================================ */
   --cd-body-text-color:                  #3b3247;
-  --cd-faded-text-color:                 #70607b;
+  --cd-faded-text-color:                 #70627c;
 
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color:                     #70607b;
+  --cd-border-color:                     #70627c;
   --cd-border-width:                     1px;
   --cd-border-style:                     solid;
   --cd-border-radius:                    .75rem;
@@ -84,7 +84,7 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider:          #70607b;
+  --cd-navbar-dropdown-divider:          #70627c;
   --cd-navbar-dropdown-border-radius:    0 0 var(--cd-border-radius) var(--cd-border-radius);
 
 
@@ -422,6 +422,7 @@ a:active {
   font-family: var(--cd-card-header-font-family) !important;
   border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
   opacity: 0.7;
+  color: var(--cd-secondary-color)!important;
 }
 
 
