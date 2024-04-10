@@ -412,7 +412,7 @@ a:active {
   background-color: #fcf6f6 !important;
   border: none;
   border-radius: var(--cd-border-radius) !important;
-}
+} 
 
 .card-header {
   background-color: var(--cd-card-header-background-color) !important;
