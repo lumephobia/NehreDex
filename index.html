@@ -130,7 +130,7 @@
 
     <!-- Gallery Container
     ------------------------------------------------------------------- -->
-    <div id="charadex-gallery" class="charadex-gallery">
+    <div id="charadex-gallery">
 
 
       <!-- Filters
@@ -263,8 +263,8 @@
       <div class="card p-4 mb-4">
         <div class="row no-gutters m-n1 text-sans-serif font-weight-bold text-uppercase">
           <div class="col-md-4 col-12 text-center p-1 order-md-1"><a id="masterlistLink" href="">Masterlist</a></div>
-          <div class="col-md-4 col-6 p-1"><a id="entryPrev" href=""><i class="bi bi-chevron-left mr-2"></i><span></span></a></div>
-          <div class="col-md-4 col-6 text-right p-1 order-md-1"><a id="entryNext" href=""><span></span><i class="bi bi-chevron-right ml-2"></i></a></div>
+          <div class="col-md-4 col-6 p-1"><a id="entryPrev" href="">&laquo;</i><span></span></a></div>
+          <div class="col-md-4 col-6 text-right p-1 order-md-1"><a id="entryNext" href=""><span></span>&raquo</a></div>
         </div>
       </div>
 
@@ -280,7 +280,7 @@
 
 
           <!-- Image -->
-          <div class="col-md-6 p-3">
+          <div class="col-md-6 p-3" style="background-color: #ebe1e1;">
             <div class="mx-auto w-100 text-center" oncontextmenu="return false">
               <img class="image img-fluid" src="">
             </div>
@@ -360,22 +360,24 @@
         
             </div>
 
-            <hr>
-
-            
-            <!-- Item -->
-            <div class="">
-              <b class="text-muted">Notes</b>
-              <div class="pl-3">
-                <span class="notes"></span>
-              </div>
-            </div>
-
+          
             <!-- Add more list items above this line-->
           </div>
         </div>
       </div> 
     </li>
+
+    <div class="card">
+
+      <!-- Item -->
+      <div class="">
+        <b class="text-muted">Notes</b>
+        <div class="pl-3">
+          <span class="notes"></span>
+        </div>
+      </div>
+
+    </div>
 
 
   </div>
