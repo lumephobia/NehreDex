@@ -599,3 +599,13 @@ img {
 /* Extras
 /* ============================================================= */
 
+.artframe{
+  background-color: #ebe1e1;
+  border-radius: .6rem;
+}
+
+.artart{
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
