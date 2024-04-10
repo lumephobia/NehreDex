@@ -21,14 +21,14 @@ body {
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color:                  #9dc1d1;
+  --cd-secondary-color:                  #a4b7be;
   --cd-secondary-text-color:             #70627c;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color:            #fcf6f6;
-  --cd-content-background-color:         #866e91;
+  --cd-content-background-color:         #796888;
   --cd-faded-background-color:           #eee7e7;
 
   /* Background Extras */
@@ -105,7 +105,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color:                  #9dc1d1;
+  --cd-link-text-color:                  #a4b7be;
   --cd-link-text-color-hover:            var(--cd-secondary-color);
 
 
@@ -409,10 +409,8 @@ a:active {
 /* ============================================================= */
 
 .card {
-  background-color: #eee7e7 !important;
-  border-width: var(--cd-card-border-width) !important;
-  border-style: var(--cd-card-border-style) !important;
-  border-color: transparent !important;
+  background-color: #fcf6f6 !important;
+  border: none;
   border-radius: var(--cd-border-radius) !important;
 }
 
