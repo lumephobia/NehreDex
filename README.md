@@ -1,9 +1,3 @@
-This project is a version of charadex for the Stories of L'une Toyhou.se world.
-Read more about charadex below!
-
-
----- 
-
 # Charadex v.1.5.0
 
 Charadex v1.0 is a tool designed to simplify the creation and maintenance of species websites.
