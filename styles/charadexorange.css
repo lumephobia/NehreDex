@@ -15,21 +15,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #bd8da7;
-  --cd-primary-text-color:               #3b3247;
+  --cd-primary-color:                    #aa9f72;
+  --cd-primary-text-color:               #fffcf1;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color:                  #9fb7c0;
-  --cd-secondary-text-color:             #70627c;
+  --cd-secondary-color:                  #939799;
+  --cd-secondary-text-color:             #fff;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color:            #fcf6f6;
-  --cd-content-background-color:         #fcf6f6;
-  --cd-faded-background-color:           #bdafc6;
+  --cd-body-background-color:            #fffcf1;
+  --cd-content-background-color:         #fffcf1;
+  --cd-faded-background-color:           #fffcf1;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -37,26 +37,25 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color:                  #70627c;
-  --cd-faded-text-color:                 #70627c;
+  --cd-body-text-color:                  #615048;
+  --cd-faded-text-color:                 #86594f;
 
   /* ============================================================= */
   /* Borders
   ================================================================ */
-  --cd-border-color:                    #d2c7dd;
+  --cd-border-color:                     rgba(0, 0, 0, 0.125);
   --cd-border-width:                     1px;
   --cd-border-style:                     solid;
-  --cd-border-radius:                    .6rem;
+  --cd-border-radius:                    1rem;
 
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #fcf6f6;
+  --cd-navbar-background-color:          #fffcf1;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
-  --cd-navbar-text-color:                #70627c;
-  --cd-navbar-border-color:              #9fb7c0;
-  --cd-navbar-link-color:                var(--cd-navbar-text-color);
+  --cd-navbar-text-color:                #615048;
+  --cd-navbar-link-color:                #b67664;
   --cd-navbar-link-color-hover:          var(--cd-primary-color);
   --cd-navbar-font-family:               var(--cd-header-font-family);
   
@@ -85,7 +84,7 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider:          #70627c;
+  --cd-navbar-dropdown-divider:          rgba(255,255,255,.12);
   --cd-navbar-dropdown-border-radius:    0 0 var(--cd-border-radius) var(--cd-border-radius);
 
 
@@ -106,7 +105,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color:                  #9fb7c0;
+  --cd-link-text-color:                  #4c8ebd;
   --cd-link-text-color-hover:            var(--cd-secondary-color);
 
 
@@ -145,7 +144,7 @@ body {
   
   /* Background */
   --cd-card-background-color:            var(--cd-content-background-color);
-  --cd-card-header-background-color:     #bdafc6;
+  --cd-card-header-background-color:     var(--cd-card-background-color);
 
   /* Text */
   --cd-card-header-font-family:          var(--cd-header-font-family);
@@ -166,8 +165,8 @@ body {
   --cd-button-background-color-hover:    var(--cd-secondary-color);
 
   /* Text */
-  --cd-button-text-color:                var(--cd-body-background-color);
-  --cd-button-text-color-hover:          var(--cd-body-background-color);
+  --cd-button-text-color:                var(--cd-primary-text-color);
+  --cd-button-text-color-hover:          var(--cd-secondary-text-color);
 
   /* Border */
   --cd-button-border-width:              var(--cd-border-width);
@@ -210,11 +209,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   
-    /* Global Background */
-    background: 
-    url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a42d8824929283de8c63/previews/6615a42e8824929283de8cd6/download/dashedbg.png) repeat fixed,  /* On top,    like z-index: 4; */
-    url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a413091d41ed1c87fcd8/previews/6615a414091d41ed1c87fd89/download/bg1.png) repeat fixed;
- }
+  background: 
+    transparent url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a42d8824929283de8c63/previews/6615a42e8824929283de8cd6/download/dashedbg.png) top left repeat;
+  
+  
+}
+
+html {
+  background: rgb(232,196,166);
+  background: linear-gradient(177deg, rgba(232,196,166,1) 0%, rgba(250,220,192,1) 68%, rgba(251,226,196,1) 100%); 
+}
 
 
 /* ============================================================= */
@@ -241,7 +245,7 @@ a:active {
   background-color: var(--cd-navbar-background-color) !important;
   font-family: var(--cd-navbar-font-family) !important;
   z-index: 2000;
-  border-bottom: var(--cd-navbar-border-color) 4px solid;
+  border-bottom: var(--cd-navbar-link-color) 4px solid;
 }
 
 .navbar .navbar-brand {
@@ -298,7 +302,7 @@ a:active {
 
 .navbar .dropdown-menu {
   color: var(--cd-navbar-background-color) !important;
-  background-color: var(--cd-navbar-border-color) !important;
+  background-color: var(--cd-navbar-link-color) !important;
   border-radius: var(--cd-navbar-dropdown-border-radius) !important;
   border: none;
   margin-top: 0px;
@@ -428,7 +432,9 @@ a:active {
 
 .card {
   background-color: var(--cd-card-background-color) !important;
-  border: none;
+  border-width: var(--cd-card-border-width) !important;
+  border-style: var(--cd-card-border-style) !important;
+  border-color: var(--cd-card-border-color) !important;
   border-radius: var(--cd-border-radius) !important;
 }
 
@@ -439,14 +445,6 @@ a:active {
   border-bottom-style: var(--cd-card-border-style) !important;
   font-family: var(--cd-card-header-font-family) !important;
   border-radius: calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) 0 0 !important;
-}
-
-.card-header a, a:visited, h5 {
-  color: var(--cd-card-background-color) !important;
-}
-
-.card-header a, a:visited, h3 {
-  color: var(--cd-navbar-brand-color) !important;
 }
 
 
@@ -681,88 +679,9 @@ p:last-child {
     }
 }
 .art {
-  background: #bdafc635;
+  background: #ebc8aa35;
   border-radius: .6rem;
 }
 
-.card-header .cardlink {
-  color: #fcf6f6 !important;
-}
-
-.bannerbox{
-  overflow: hidden;
-}
-
-.bannerbg{
-  position: relative !important;
-  background-color: #c0b5c2;
-  background-image: url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6615a42d8824929283de8c63/previews/6615a42e8824929283de8cd6/download/dashedbg.png);
-  background-repeat: repeat;
-  background-position: fixed;
-  display: flex;
-  padding: 1.5rem;
-  min-height: 250px;
-  border-radius: .6rem;
-}
-
-
-.bannerimg{
-position: absolute !important;
-z-index: 1;
-top: -50px;
-right: 10px;
-width: 100%;
-}
-
-.boximg {
-height: 80%;
-max-height: 450px;
-width: auto;
-text-align: right;
-}
-
-.bannertext{
-  position: absolute !important;
-  margin-left: 15%;
-  padding: 20px;
-  width: 50%;
-  height: 200px;
-  overflow-x: auto;
-  color: var(--cd-body-background-color);
-  z-index: 2;
-  opacity: .7;
-}
-
-
-.float {  
-  animation-name: float;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-
-@keyframes float {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
-  to   { transform: translate(0, -0px); }    
-}
-
-@media (max-width: 768px) {
-  .bannertext {
-      width: 90%;
-      margin: auto auto auto auto;
-      padding: 10px;
-
-  }
-}
-
-
-.exampleimg {
-  width: 100% !important;
-  height: 100% !important;
-  max-height: none!important;
-}
 
 
