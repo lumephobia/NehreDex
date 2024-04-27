@@ -46,7 +46,22 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
+    <style>
+        
+        li{
+            h2{
+                color:  #9fb7c0;
 
+            } 
+        }
+
+        li:nth-child(odd) {
+            h2{
+                color: #bd8da7;
+
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -137,13 +152,15 @@
     <-- Do not remove 'display:none;'
     <-- Edit these to your liking
     <-------------------------------------------------------------------- -->
-    <div style="display:none;">
+    <div style="display:none;" class="dets">
 
 
         <!-- Gallery Items
         ------------------------------------------------------------------- -->
-        <li class="col-md-4 col-sm-6 p-1" id="charadex-entries">
-            <a class="card px-4 py-3 cardlink text-truncate" href="">
+        <li class="col-md-4 col-sm-6 p-1 dets" id="charadex-entries">
+            <a class="card px-4 py-3 cardlink text-truncate inv text-center" href="">
+                
+                <h2><i class="fa-solid fa-seedling"></i></h2>
                 <h5 class="m-0"><span class="username"></span></h5>
             </a>
         </li>
@@ -183,17 +200,38 @@
 
                 <hr>
 
-                <div class="p-md-5 p-4">
-                    <h4>Transaction Log</h4>
-                    <div class="pl-4" id="log-table">
-                        <div class="d-none">
-                            <div class="row no-gutters" id="log-entry">
-                                <div class="col-md-3"><span class="timestamp"></span></div>
-                                <div class="col-md-9"><span class="reason"></span></div>
+                <div class=" text-center">
+                    <br>
+
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapselog" aria-expanded="true" aria-controls="collapselog">
+                        <i class="fa-solid fa-circle-down"></i>
+                    </button>
+
+                    <br><br>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div id="accordion">
+
+                <div id="collapselog" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card card-body">
+            
+                    <div class="p-md-5 p-4">
+                     <h4>Transaction Log</h4>
+                        <div class="pl-4" id="log-table">
+                             <div class="d-none">
+                                 <div class="row no-gutters" id="log-entry">
+                                  <div class="col-md-3"><span class="timestamp"></span></div>
+                                  <div class="col-md-9"><span class="reason"></span></div>
                             </div>
                         </div>
                     </div>
+                  </div>
                 </div>
+            </div>
 
             </div>
         </li>

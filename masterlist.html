@@ -47,6 +47,8 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
+    
+
 </head>
 
 <body>
@@ -265,28 +267,7 @@
                                 <div class="pl-3 text-pre traits"></div>
                             </div>
 
-                            
-
-                            <!-- Item
-                            <div class="">
-                                <b class="text-muted">Notes</b>
-                                <div class="pl-3 text-pre notes"></div>
-                            </div>
-
-                            <hr> -->
-
-                            <!-- Item
-                            <div class="">
-                                <b class="text-muted">Transaction Log</b>
-                                <div class="pl-3 pt-2 small" id="log-table">
-                                    <div class="d-none">
-                                        <div class="row no-gutters" id="log-entry">
-                                            <div class="col-md-3"><span class="timestamp"></span></div>
-                                            <div class="col-md-9"><span class="reason"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
 
                             <!-- Add more list items above this line-->
                         </div>
@@ -295,35 +276,94 @@
                     <!-- Where to Update
                     <div class="card bg-faded py-2 px-3 mt-3 small text-center">
                         <b>If you need to update this entry, please do so <a href="">here</a>.</b>
-                    </div>  -->
+                    </div> 
                         <br>
-                </div>
+                -->
+
+                </div> 
             </div>
 
-            <br>
+            <br> 
 
-            <div class="card">
-                <div class="px-md-5 pt-md-5 p-4">
+         <!--<div class="container">
+                <div class="row stamp">
+                  <div class="col-sm card">
+                    <div class="px-md-5 pt-md-5 p-4">                 
 
-                                                <!-- Item -->
-                                                <div class="text-center">
-                                                    <h5 class="text-muted">Notes</h5>
-                                                    <hr>
-                                                    <div class="pl-3 text-pre notes"></div>
+                         !-- Item --
+                         <div class="text-center">
+                           <h5 class="text-muted">Badges</h5>
+                            <hr>
+
+                            <div class="hover-text">
+                                <span class="tooltip-text" id="top">I'm a tooltip!</span>
+                                <div id="stamptest" class="pl-3 text-pre testing stampp"></div> 
+                            </div>
+
+                          
                                         
-                                                </div>
+                         </div>
+                     </div>
+                    
+                  </div>
+                  <div class="col-lg-1"></div>
+                  <div class="col-sm card">
+                
+                    <div class="px-md-5 pt-md-5 p-4 text-center">
 
-                </div>
-            </div>
+                        !-- Item --
+                        <div class="text-center">
+                         <h5 class="text-muted">Notes</h5>
+                         <hr>
+                         <div class="pl-3 text-pre notes"></div>
+                                            
+                        </div>
+
+                        <br><br>
+
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapselog" aria-expanded="true" aria-controls="collapselog">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </button> -->
+                       <!-- <button class="btn btn-link" data-toggle="collapse" data-target="#collapseedits" aria-expanded="true" aria-controls="collapseedits">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>-->
+
+                    
+
+                        <div class="card">
+                
+                            <div class="px-md-5 pt-md-5 p-4 text-center">
+        
+                                <!-- Item -->
+                                <div class="text-center">
+                                 <h5 class="text-muted">Notes</h5>
+                                 <hr>
+                                 <div class="pl-3 text-pre notes"></div>
+                                                    
+                                </div>
+        
+                                <br><br>
+
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapselog" aria-expanded="true" aria-controls="collapselog">
+                                    <i class="fa-solid fa-circle-down"></i>
+                                </button>
+                               <!-- <button class="btn btn-link" data-toggle="collapse" data-target="#collapseedits" aria-expanded="true" aria-controls="collapseedits">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>-->
+                             </div>
+
+    
+                    </div>
 
             <br>
 
-            <div class="card">
-                <div class="px-md-5 pt-md-5 p-4">
+            <div id="accordion">
 
-                            <!-- Item -->
+                  <div id="collapselog" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card card-body">
+                      <!-- Item -->
                             <div class="text-center">
-                                <h5 class="text-muted">Transaction Log</h5>
+                                <h5 class="text-muted">Character Log</h5>
                                 <hr>
                                 <div class="pl-3 pt-2 small" id="log-table">
                                     <div class="d-none">
@@ -334,10 +374,26 @@
                                     </div>
                                 </div>
                             </div>
-
-                </div>
-            </div>
-
+                    </div>
+                  </div>
+                  <div id="collapseedits" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card card-body">
+                      <!-- Item -->
+                            <div class="text-center">
+                                <h5 class="text-muted">Updates?</h5>
+                                <hr>
+                                <div class="pl-3 pt-2 small" id="log-table">
+                                    <div class="d-none">
+                                        <div class="row no-gutters" id="log-entry">
+                                            <div class="col-md-3"><span class="timestamp"></span></div>
+                                            <div class="col-md-9"><span class="reason"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+                </div> 
 
         </li>
 
@@ -361,9 +417,7 @@
     <script src="styles/config.js"></script>
     <script src="styles/charadex.js"></script>
     <script>masterlist(options.masterlist);</script>
-
-
-
+    
 
 
 </body>

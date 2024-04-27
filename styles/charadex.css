@@ -29,7 +29,7 @@ body {
   ================================================================ */
   --cd-body-background-color:            #fcf6f6;
   --cd-content-background-color:         #fcf6f6;
-  --cd-faded-background-color:           #bdafc6;
+  --cd-faded-background-color:           #bdafc635;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -222,17 +222,22 @@ body {
 /* ============================================================= */
 
 a,
-a:visited {
+a:visited,
+.btn-link
+{
   color: var(--cd-link-text-color);
   transition: color .2s ease-in-out;
 }
 
 a:hover,
 a:focus,
-a:active {
-  color: var(--cd-link-text-color-hover);
+a:active,
+.btn
+{
+  color: var(--cd-link-text-color-hover)!important;
   text-decoration: none;
 }
+
 
 /* ============================================================= */
 /* Navbar
@@ -662,6 +667,7 @@ p:last-child {
     white-space: break-spaces;
 }
 
+/* Header with overlapping img and multiple layers */
 .hero-title {
     color: var(--cd-primary-text-color);
     background-color: var(--cd-primary-color);
@@ -758,6 +764,7 @@ text-align: right;
   }
 }
 
+/* */
 
 .exampleimg {
   width: 100% !important;
@@ -765,4 +772,95 @@ text-align: right;
   max-height: none!important;
 }
 
+/* inventory stuff*/
 
+.inv h5 {
+  color: #70627c !important;
+}
+
+/* Tooltip */ 
+
+
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: #192733;
+  padding: 5px;
+  z-index: 1;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#top {
+  top: -40px;
+  left: 0%;
+}
+
+#top::before {
+  top: 80%;
+  left: 45%;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+
+.notes:empty::after{
+  content: "no additional notes";
+}
+
+
+.petss {
+  width: 150px!important;
+  height: 150px!important;
+}
+
+
+/* ============================================================= */
+/* CHARACTER STAMP/AWARD
+/* ============================================================= */
+
+.stamp .col-lg-1{
+  max-width: 10px!important;
+}
+
+/* checks if stamp is earend or not (empty db) */
+
+.stampp {
+  height: 80px;
+  width: 80px;
+  color: transparent;
+}
+
+.stampp:empty {
+  opacity: .4;
+}
+
+
+/* classes for each stamp/award*/
+
+.testing {
+  background-image: url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6625366bc0e4e838b654a486/previews/6625366bc0e4e838b654a4a2/download/5-image.png);
+  background-size: cover;
+}
