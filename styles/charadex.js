@@ -663,7 +663,7 @@ const frontPage = (options) => {
                 let indexEvents = newestEvents.slice(0, charadexInfo.numOfPrompts);
     
                 // Add card link
-                for (var i in indexEvents) { indexEvents[i].cardlink = folderURL + "prompts.html?" + cardKey + "=" + indexEvents[i][cardKey]; }
+                for (var i in indexEvents) { indexEvents[i].cardlink = folderURL + "/" +  "prompts.html?" + cardKey + "=" + indexEvents[i][cardKey]; }
     
                 // Nyoom
                 let galleryOptions = {
