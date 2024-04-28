@@ -47,6 +47,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
 
 
+    <style>
+        .enddate::before{
+            content: "Ends";
+            font-weight: bold;
+            padding-right: 30px;
+        }
+
+        .enddate:empty:before{
+            display: none;
+        }
+
+        .startdate::before{
+            content: "Starts";
+            font-weight: bold;
+            padding-right: 30px;
+        }
+
+        .startdate:empty:before{
+            display: none;
+        }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -156,15 +180,15 @@
                         <div class="col-12 gallery-item p-1" id="prompt-item">
                             <div class="card bg-faded p-3">
                                 <h5 class="m-0">
-                                    <a class="cardlink title" href=""></a>
+                                    <a class="cardlink title" href=""></a> <span class="time" > </span>
                                 </h5>
                                 <hr class="my-2">
                                 <div class="row no-gutters small my-n2">
                                     <div class="col-md-6 p-2 d-flex justify-content-between">
-                                        <b>Starts</b> <span class="startdate"></span>
+                                        <span class="startdate"></span>
                                     </div>
                                     <div class="col-md-6 p-2 d-flex justify-content-between">
-                                        <b>Ends</b> <span class="enddate"></span>
+                                        <span class="enddate"></span>
                                     </div>
                                 </div>
                             </div>

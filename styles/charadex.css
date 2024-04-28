@@ -836,6 +836,20 @@ text-align: right;
   height: 150px!important;
 }
 
+.time {
+  color: var(--cd-body-text-color);
+}
+
+.time::before {
+  content: "-";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.time:empty::before {
+  content: "";
+}
+
 
 
 /* ============================================================= */
