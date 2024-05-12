@@ -830,7 +830,6 @@ text-align: right;
   content: "no additional notes";
 }
 
-
 .petss {
   width: 150px!important;
   height: 150px!important;
@@ -878,4 +877,40 @@ text-align: right;
 .testing {
   background-image: url(https://trello.com/1/cards/6615a2d98756c0a18a5ad532/attachments/6625366bc0e4e838b654a486/previews/6625366bc0e4e838b654a4a2/download/5-image.png);
   background-size: cover;
+}
+
+
+/* ============================================================= */
+/* CHARACTER Traits
+/* ============================================================= */
+
+
+.traitt {
+  padding-bottom: 10px;
+}
+
+.traitt:empty {display: none;}
+
+.physique::before {
+  content: 'Physique\A';
+  white-space: pre;
+  font-weight: bold;
+}
+
+.flora::before {
+  content: 'Flora\A';
+  white-space: pre;
+  font-weight: bold;
+}
+
+.trinket::before {
+  content: 'Trinkets\A';
+  white-space: pre;
+  font-weight: bold;
+}
+
+.misc::before {
+  content: 'Misc.\A';
+  white-space: pre;
+  font-weight: bold;
 }
